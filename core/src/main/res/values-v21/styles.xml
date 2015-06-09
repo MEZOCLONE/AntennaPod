@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="Theme.AntennaPod.Light" parent="Theme.AppCompat.NoActionBar">
+                <item name="colorPrimary">@color/primary_light</item>
+                <item name="colorAccent">@color/color_accent</item>
+                <item name="android:statusBarColor">#1065b3</item>
+                <item name="android:navigationBarColor">#0f5ad0</item>
+                <item name="attr/action_about">@drawable/ic_info_grey600_24dp</item>
+                <item name="attr/action_search">@drawable/ic_search_grey600_24dp</item>
+                <item name="attr/action_stream">@drawable/ic_settings_input_antenna_grey600_24dp
+                </item>
+                <item name="attr/av_download">@drawable/ic_file_download_grey600_24dp</item>
+                <item name="attr/av_fast_forward">@drawable/ic_fast_forward_grey600_24dp</item>
+                <item name="attr/av_pause">@drawable/ic_pause_grey600_24dp</item>
+                <item name="attr/av_play">@drawable/ic_play_arrow_grey600_24dp</item>
+                <item name="attr/av_rewind">@drawable/ic_fast_rewind_grey600_24dp</item>
+                <item name="attr/content_discard">@drawable/ic_delete_grey600_24dp</item>
+                <item name="attr/content_new">@drawable/ic_add_grey600_24dp</item>
+                <item name="attr/device_access_time">@drawable/ic_timer_grey600_24dp</item>
+                <item name="attr/feed">@drawable/ic_feed_grey600_24dp</item>
+                <item name="attr/location_web_site">@drawable/ic_web_grey600_24dp</item>
+                <item name="attr/navigation_accept">@drawable/ic_done_grey600_24dp</item>
+                <item name="attr/navigation_cancel">@drawable/ic_cancel_grey600_24dp</item>
+                <item name="attr/navigation_expand">@drawable/ic_expand_more_grey600_36dp</item>
+                <item name="attr/navigation_refresh">@drawable/ic_refresh_grey600_24dp</item>
+                <item name="attr/navigation_up">@drawable/navigation_up</item>
+                <item name="attr/navigation_shownotes">@drawable/ic_description_grey600_36dp</item>
+                <item name="attr/navigation_chapters">@drawable/ic_toc_grey600_36dp</item>
+                <item name="attr/social_share">@drawable/ic_share_grey600_24dp</item>
+                <item name="attr/stat_playlist">@drawable/ic_list_grey600_24dp</item>
+                <item name="attr/type_audio">@drawable/ic_hearing_grey600_18dp</item>
+                <item name="attr/type_video">@drawable/ic_remove_red_eye_grey600_18dp</item>
+                <item name="attr/non_transparent_background">@color/white</item>
+                <item name="attr/overlay_background">@color/overlay_light</item>
+                <item name="attr/overlay_drawable">@drawable/overlay_drawable</item>
+                <item name="attr/dragview_background">@drawable/ic_drag_handle</item>
+                <item name="attr/dragview_float_background">@color/white</item>
+                <item name="attr/nav_drawer_background">@color/white</item>
+                <item name="attr/ic_action_overflow">@drawable/ic_more_vert_grey600_24dp</item>
+                <item name="attr/ic_new">@drawable/ic_new_releases_grey600_24dp</item>
+                <item name="attr/ic_history">@drawable/ic_history_grey600_24dp</item>
+                <item name="attr/av_play_big">@drawable/ic_play_arrow_grey600_36dp</item>
+                <item name="attr/av_pause_big">@drawable/ic_pause_grey600_36dp</item>
+                <item name="attr/av_ff_big">@drawable/ic_fast_forward_grey600_36dp</item>
+                <item name="attr/av_rew_big">@drawable/ic_fast_rewind_grey600_36dp</item>
+                <item name="attr/ic_settings">@drawable/ic_settings_grey600_24dp</item>
+                <item name="attr/ic_lock_open">@drawable/ic_lock_open_grey600_24dp</item>
+                <item name="attr/ic_lock_closed">@drawable/ic_lock_closed_grey600_24dp</item>
+                <item name="attr/ic_filter">@drawable/ic_filter_grey600_24dp</item>
+        </style>
+</resources>

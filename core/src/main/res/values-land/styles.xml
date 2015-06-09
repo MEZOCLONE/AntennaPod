@@ -2,5 +2,6 @@
 <resources>
     <style name="Theme.MediaPlayer" parent="@style/Theme.AppCompat.Light">
         	<item name="android:windowActionBarOverlay">true</item>
+
     </style>
 </resources>

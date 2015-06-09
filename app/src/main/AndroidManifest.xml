@@ -30,6 +30,7 @@
         android:name="de.danoeh.antennapod.PodcastApp"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:hardwareAccelerated="true"
         android:backupAgent=".core.backup.OpmlBackupAgent"
         android:restoreAnyVersion="true"
         android:logo="@drawable/ic_launcher"
@@ -42,7 +43,8 @@
             android:name=".activity.MainActivity"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTask"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -50,7 +52,8 @@
         </activity>
         <activity
             android:name=".activity.AudioplayerActivity"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.danoeh.antennapod.activity.MainActivity"/>
@@ -81,7 +84,8 @@
         <activity
             android:name=".activity.PreferenceActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="@string/settings_label">
+            android:label="@string/settings_label"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.danoeh.antennapod.activity.MainActivity"/>
