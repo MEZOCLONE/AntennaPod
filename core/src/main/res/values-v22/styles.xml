@@ -2,16 +2,17 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#0f5ad0</item>
+        <item name="android:statusBarColor">#1065b3</item>
+        <item name="android:navigationBarColor">#1065b3</item>
+        <item name="android:actionBarTheme">@style/BigBackground</item>
     </style>
 
     <style name="Theme.AntennaPod.Light" parent="Theme.AppCompat">
         <item name="colorPrimary">@color/primary_light</item>
         <item name="colorAccent">@color/color_accent</item>
-        <item name="android:statusBarColor">#1065b3</item>
+        <item name="android:statusBarColor">#0f5ad0</item>
         <item name="android:navigationBarColor">#0f5ad0</item>
         <item name="attr/action_about">@drawable/ic_info_grey600_24dp</item>
         <item name="attr/action_search">@drawable/ic_search_grey600_24dp</item>
@@ -55,5 +56,12 @@
         <item name="attr/ic_lock_open">@drawable/ic_lock_open_grey600_24dp</item>
         <item name="attr/ic_lock_closed">@drawable/ic_lock_closed_grey600_24dp</item>
         <item name="attr/ic_filter">@drawable/ic_filter_grey600_24dp</item>
+    </style>
+
+
+    <style name="BigBackground" parent="@android:style/ThemeOverlay.Material.ActionBar">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+
     </style>
 </resources>

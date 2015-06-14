@@ -22,9 +22,10 @@ dependencies {
     compile 'com.squareup.okio:okio:1.2.0'
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'com.joanzapata.android:android-iconify:1.0.9'
-
     compile project(':core')
     compile project(':library:drag-sort-listview')
+    compile 'com.android.support:design:22.2.0'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
 }
 
 def getMyVersionName() {
@@ -42,18 +43,15 @@ def getMyVersionCode() {
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
-
+    compileSdkVersion 22
+    buildToolsVersion '23.0.0 rc2'
     defaultConfig {
         minSdkVersion 10
-        targetSdkVersion 21
-        versionCode getMyVersionCode()
+        targetSdkVersion 22
         versionName "${getMyVersionName()}"
         testApplicationId "de.test.antennapod"
         testInstrumentationRunner "de.test.antennapod.AntennaPodTestRunner"
     }
-
     signingConfigs {
         releaseConfig {
             if (project.hasProperty('releaseStoreFile')) {
@@ -78,7 +76,6 @@ android {
             }
         }
     }
-
     buildTypes {
         def STRING = "String"
         def FLATTR_APP_KEY = "FLATTR_APP_KEY"
@@ -99,14 +96,14 @@ android {
             buildConfigField STRING, FLATTR_APP_SECRET, mFlattrAppSecret
         }
     }
-
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
     }
-
     lintOptions {
         abortOnError false
+    }
+    productFlavors {
     }
 }
 

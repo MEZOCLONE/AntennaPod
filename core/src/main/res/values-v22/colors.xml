@@ -22,11 +22,14 @@
     <color name="selection_background_color_light">@color/ripple_material_light</color>
 
     <!-- Theme colors -->
+
+
     <color name="primary_light">#ffffff</color>
     <color name="primary_dark">#1065b3</color>
     <color name="color_accent">#ff3c6f</color>
     <color name="colorPrimary">#1065b3</color>
     <color name="colorPrimaryDark">#132951</color>
+
     <color name="divider">#644d4d4d</color>
     <color name="titleTextColor">@android:color/white</color>
 </resources>

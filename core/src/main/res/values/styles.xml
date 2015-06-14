@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-        <item name="android:navigationBarColor">@color/colorPrimary</item>
-    </style>
-
     <style name="Theme.AntennaPod.Light" parent="@style/Theme.AppCompat.Light">
         <item name="colorPrimary">@color/primary_light</item>
         <item name="colorAccent">@color/color_accent</item>
-        <item name="android:statusBarColor">#1065b3</item>
-        <item name="android:navigationBarColor">#0f5ad0</item>
         <item name="attr/action_about">@drawable/ic_info_grey600_24dp</item>
         <item name="attr/action_search">@drawable/ic_search_grey600_24dp</item>
         <item name="attr/action_stream">@drawable/ic_settings_input_antenna_grey600_24dp</item>
@@ -274,6 +265,44 @@
         <item name="android:scaleType">centerCrop</item>
         <item name="android:tint">@color/image_readability_tint</item>
 
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Widget.MyApp.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">?colorPrimary</item>
+        <item name="theme">@style/ThemeOverlay.MyApp.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="ThemeOverlay.MyApp.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/titleTextColor</item>
+    </style>
+
+    <style name="NotImplementedYet">
+        <item name="android:textSize">@dimen/abc_text_size_headline_material</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/titleTextColor</item>
+    </style>
+    <style name="Title.Expanded" parent="Title">
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="Title.collapsed" parent="Title">
+        <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ViewText">
+        <item name="android:textColor">@color/titleTextColor</item>
+    </style>
+    <style name="DrawerNameText" parent="ViewText">
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

@@ -23,6 +23,11 @@
     <dimen name="listitem_iconwithtext_textleftpadding">14dp</dimen>
     <dimen name="listitem_iconwithtext_textverticalpadding">16dp</dimen>
 
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
     <dimen name="listitem_threeline_height">96dp</dimen>
     <dimen name="listitem_threeline_textleftpadding">14dp</dimen>
     <dimen name="listitem_threeline_textrightpadding">8dp</dimen>
